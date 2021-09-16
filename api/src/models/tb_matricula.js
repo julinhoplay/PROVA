@@ -11,7 +11,7 @@ export default class tb_matricula extends Model {
       primaryKey: true
     },
     nm_aluno: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(400),
       allowNull: true
     },
     nr_chamada: {
@@ -19,11 +19,11 @@ export default class tb_matricula extends Model {
       allowNull: true
     },
     nm_curso: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(400),
       allowNull: true
     },
     nm_turma: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(400),
       allowNull: true
     }
   }, {

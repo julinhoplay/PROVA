@@ -18,80 +18,108 @@
   <div class="Box-Site"> 
     <div class="left-box">
         <header class="header-left-box">
-            <div class="svg-cabecalho-left-box"> <img src="/html-css-puro/public/assets/images/Group107.svg" /></div>
-            <div class="devSchool"> <span>Dev</span>School</div>
+            <div class="svg-cabecalho-left-box"> <img src="/react/site/public/assets/images/logo.png" /></div>
+            <div class="devStore"> <span>Dev</span>Store</div>
         </header>
         <div class="black-box"></div>
         <div class="left-box-management">
             <div> Gerenciamento </div>
-            <img src="/html-css-puro/public/assets/images/SetaBaixo.svg" />
+            <img src="/react/site/public/assets/images/seta.png" />
         </div>
-        <div class="left-box-aluno">
-            <div> Alunos </div>
+        <div class="left-box-produto">
+            <div> Produtos </div>
         </div> 
     </div>
 
       <div class="right-box"> 
         <div class="reader-right-box">
            <div class = "box-user"> 
-             <div class="user-image">  <img src="/html-css-puro/public/assets/images/Bruninho.png" alt = ""> <div class="absolute">  3   </div> </img> </div>
+             <div class="user-image">  <img src="/react/site/public/assets/images/bruno.png" alt = ""> <div class="absolute">  3   </div> </img> </div>
              
              <div class="user-name"> Olá, <b>  Bruno de Oliveira </b> </div>
             </div>
             <div class="box-image">
-                <div class="refresh-button"> <button> <img src="/html-css-puro/public/assets/images/Vector.svg" alt = "" />  </button> </div>
-                <div class="left-button"> <button> <img src="/html-css-puro/public/assets/images/Group_104.svg" alt = "" />  </button> </div>
+                <div class="refresh-button"> <button> <img src="/react/site/public/assets/images/atualizar.png" alt = "" />  </button> </div>
+                <div class="left-button"> <button> <img src="/react/site/public/assets/images/log-out.svg" alt = "" />  </button> </div>
             </div>
         </div>
         <div class="bottom-bar-right-header"> </div>
       
         <div class="body-right-box">
-            <div class="new-student-box">
-                <div class="text-new-student">
-                    <div class="bar-new-student"></div>
-                    <div class="text-new-student">Novo Aluno</div>
+            <div class="new-produto-box">
+                <div class="text-new-produto">
+                    <div class="bar-new-produto"></div>
+                    <div class="text-new-produto">Novo Produto</div>
                 </div>
-                <div class="input-new-student"> 
+                <div class="input-new-produto"> 
                     <div class="input-left">
                        <div class="agp-input"> 
                         
-                        <div class="name-student"> Nome: </div>  
-                        <div class="input"> <input /> </div>  
-                    </div> 
-                    <div class="agp-input">
-                        <div class="number-student"> Chamada: </div>  
-                        <div class="input"> <input /> </div> 
+                        <div class="name-produto"> Nome: </div>  
+                        <div class="input"> <input /> </div>
+                        
+                        </div>
 
+
+                        <div class="agp-input">
+                        <div class="corse-produto"> Categoria: </div>  
+                        <div class="input"> <input />  </div>
+                        </div>  
+
+                        <div class="agp-input">
+                        <div class="corse-produto"> Avaliação: </div>  
+                        <div class="input"> <input />  </div>  
+                    </div> 
+
+
+                    <div class="input-right">
+                    <div class="agp-input">
+                        <div class="number-produto "> Preço DE: </div>  
+                        <div class="input"> <input /> </div>
+                    </div>
+                        
+                        <div class="agp-input">
+                        <div class="class-Produto">Preço POR: </div>  
+                        <div class="input"> <input /> </div> 
+                        </div>
+
+                        <div class="agp-input">
+                        <div class="class-Produto">Estoque </div>  
+                        <div class="input"> <input /> </div> 
                        </div>
                     </div>
-                    <div class="input-right">
-                     <div class="agp-input">
-                        <div class="corse-student"> Curso: </div>  
-                        <div class="input"> <input /> </div>  
-                        </div>
-                     <div class="agp-input">
-                        <div class="class-student"> Turma: </div>  
-                        <div class="input"> <input /> </div> 
-                        </div>
+             
+                  
+                    <div class="agp-input"> 
+                    <div class="Link">Link  Imagem:</div>
+                    <div class="imagem">  <input /> </div>
                     </div>
+
+                    <div class="agp-input"> 
+                    <div class="descrição-produto">  Descrição: </div>
+                    <div class="descrição">  <input /> </div>
+                    </div>
+
+                
                     <div class="button-create"> <button> Cadastrar </button> </div>
                 </div>
             </div>
 
             <div class="student-registered-box">
                 <div class="row-bar"> 
-                    <div class= "bar-new-student"> </div>
-                    <div class="text-registered-student"> Alunos Matriculados </div>
+                    <div class= "bar-new-produto"> </div>
+                    <div class="text-registered-student"> Produtos Cadastrados </div>
                 </div>
             
                 <table class ="table-user">
                     <thead>
                         <tr>
-                            <th > ID </th>
-                            <th> Nome </th>
-                            <th> Chamada </th>
-                            <th> Turma </th>
-                            <th> Curso </th>
+                            <th> </th>
+                            <th>  ID </th>
+                            <th > Produto </th>
+                            <th> Categoria </th>
+                            <th> Preço </th>
+                            <th> Estoque </th>
                             <th class="a"> </th>
                             <th class="a"> </th>
                         </tr>
@@ -99,13 +127,14 @@
             
                     <tbody>
                         <tr >
+                            <td> <img src="/react/site/public/assets/images/esfera.png"> </td>
                             <td> 1 </td>
-                            <td> Fulao da Silva Sauro</td>
-                            <td> 15 </td>
-                            <td> InfoX </td>
-                            <td > Informática </td>
-                            <td> <button> <img src="/html-css-puro/public/assets/images/editiButton.svg" alt="" /> </button> </td>
-                            <td class = "aa">   <button> <img src="/html-css-puro/public/assets/images/Group106.svg" alt="" /> </button> </td>
+                            <td> Esfera do Dragão</td>
+                            <td> Acessórios </td>
+                            <td> R$ 15,56 </td>
+                            <td > 14 </td>
+                            <td> <button> <img src="/react/site/public/assets/images/edit.svg" alt="" /> </button> </td>
+                            <td class = "aa">   <button> <img src="/react/site/public/assets/images/trash.svg" alt="" /> </button> </td>
                         </tr>
 
                         
@@ -113,11 +142,12 @@
 
                     
                         <tr class="int">
+                            <td>  <img src="/react/site/public/assets/images/esfera.png"> </td>
                             <td> 1 </td>
-                            <td> Fulao da Silva Sauro</td>
-                            <td> 16 </td>
-                            <td> InfoX </td>
-                            <td > Informática </td>
+                            <td> Esfera do Dragão</td>
+                            <td> Acessórios </td>
+                            <td> R$ 15,56 </td>
+                            <td > 14 </td>
                             <td>   </td>
                             <td>   </td>
                         </tr>
@@ -127,11 +157,12 @@
 
                     
                         <tr>
+                            <td> <img src="/react/site/public/assets/images/esfera.png">  </td>
                             <td> 1 </td>
-                            <td> Fulao da Silva Sauro</td>
-                            <td> 17 </td>
-                            <td> InfoX </td>
-                            <td > Informática </td>
+                            <td> Esfera do Dragão</td>
+                            <td> Acessórios </td>
+                            <td> R$ 15,56 </td>
+                            <td > 14 </td>
                             <td>   </td>
                             <td>   </td>
                         </tr>
@@ -141,11 +172,12 @@
 
                     
                         <tr class="int">
+                            <td>  <img src="/react/site/public/assets/images/esfera.png"> </td>
                             <td> 1 </td>
-                            <td> Fulao da Silva Sauro</td>
-                            <td> 18 </td>
-                            <td> InfoX </td>
-                            <td > Informática </td>
+                            <td> Esfera do Dragão</td>
+                            <td> Acessórios </td>
+                            <td> R$ 15,56 </td>
+                            <td > 14 </td>
                             <td>   </td>
                             <td>   </td>
                         </tr>

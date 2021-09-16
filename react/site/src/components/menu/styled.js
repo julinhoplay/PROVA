@@ -27,14 +27,14 @@ const Container = styled.div`
         border-right: 10px solid transparent;
     }
 
-    .devSchool {
+    .devStore {
         color: white;
         font-size: 28px;
         font-weight: 700;
     }
 
-    .devSchool span {
-        color: #EA10C7;
+    .devStore span {
+        color: #10EAEA;
     }
 
     .black-box {
@@ -60,14 +60,14 @@ const Container = styled.div`
         margin-left: 1em;
     }
 
-    .left-box-aluno {
+    .left-box-produto {
         display: flex;
         flex-direction: row;
         
         height: 55px;
 
         background-color: white;
-        border-left: 4px solid  #EA10C7;
+        border-left: 4px solid  #10EAEA;
 
         color: #1A1A1A;
         font-size: 18px;
@@ -78,7 +78,7 @@ const Container = styled.div`
         padding-left: 4.3em;
 
     }
-    .left-box-aluno div {
+    .left-box-produto div {
         font-weight: 800;
         color: #1A1A1A;
     }
