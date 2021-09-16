@@ -9,10 +9,12 @@ app.use(express.json())
 
 app.get('/produto', async (req, resp) => {
     try {
-        let produtos = await db.tb_produto.findAll();
+        let produtos = await db.tb_produto.findAll({order:[['id_produto', 'desc']] });
         resp.send(produtos);
     } catch (e) {
         resp.send({ erro: 'Ocorreu um erro!'})
+             
+        
     }
 })
 
@@ -23,23 +25,23 @@ app.post('/produto', async (req, resp) => {
 
       if (produto == "" || categoria == "" || precode == "" || precopor == "" || avaliacao == "" || descricao == "" || estoque == "" 
       || imagem == "" || ativo == "" || inclusao == "")
-      resp.send({ erro: 'Informe os campos necessários'})
+      return resp.send({ erro: 'Informe os campos necessários'})
 
       if  (isNaN(Number(estoque)))
-      resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
+      return resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
+
       if  (isNaN(Number(avaliacao)))
-      resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
+      return resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
 
       if  (isNaN(Number(precopor)))
-      resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
+      return resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
 
       if  (isNaN(Number(precode)))
-      resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
+      return resp.send({ erro: 'Somente números em Avaliação, Preços, Estoque'})
       
-
       if (ProdutoRepetido != null)
-      resp.send({ erro: 'Produto Já registrado'})
-
+      return resp.send({ erro: 'Produto Já registrado'})
+    
       
       
       else {
