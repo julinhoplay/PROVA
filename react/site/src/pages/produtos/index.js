@@ -203,7 +203,7 @@ export default function Index() {
                             <tbody>
                                 {produtos.map((item, i) =>
                                 <tr className={i % 2 === 0 ? "linha-alternada" : ""}>
-                                <td> <img src={item.img_produto} style={{width:"100px", height:"100px"} } /></td>
+                                <td> <img src={item.img_produto}alt="" style={{width:"100px", height:"100px"} } /></td>
                                 <td> {item.id_produto} </td>
                                 <td title={item.nm_produto}> {item.nm_produto != null && item.nm_produto.length >= 25 ? item.nm_produto.substr(0, 25) + '...' : item.nm_produto }  </td>
                                 <td> {item.ds_categoria} </td>
