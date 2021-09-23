@@ -17,7 +17,7 @@ import { Container, Conteudo } from './styled'
 import { useState, useEffect, useRef } from 'react';
 
 import Api from '../../service/api';
-const api = new Api;
+const api = new Api ();
 
 
 
@@ -43,7 +43,7 @@ export default function Index() {
     }
 
     async function inserir() {
-        if (AlterarId == 0) {
+        if (AlterarId === 0) {
         let r = await api.inserir(nome, categoria, preçoDE, preçoPOR, avaliação, descrição, estoque, imagem);
 
         if (r.erro) {
@@ -134,7 +134,7 @@ export default function Index() {
                         
                         <div class="text-new-produto">
                             <div class="bar-new-produto"></div>
-                            <div class="text-new-produto"> { AlterarId == 0 ? "Novo Produto" : "Alterando Produto " + AlterarId }</div>
+                            <div class="text-new-produto"> { AlterarId === 0 ? "Novo Produto" : "Alterando Produto " + AlterarId }</div>
                         </div>
 
                         <div class="input-new-produto"> 
@@ -171,7 +171,7 @@ export default function Index() {
                             <div class="agp-input"> 
                             <div class="descrição-produto">  Descrição: </div>
                             <div class="descrição">  <textarea type="text" value={descrição} onChange={e => setDescrição(e.target.value)} /> </div>
-                            <div class="button-create"> <button onClick={inserir}> {AlterarId == 0 ? "Cadastrar" : "Alterar"} </button> </div>
+                            <div class="button-create"> <button onClick={inserir}> {AlterarId === 0 ? "Cadastrar" : "Alterar"} </button> </div>
                             </div>
 
                                 
@@ -202,7 +202,7 @@ export default function Index() {
                     
                             <tbody>
                                 {produtos.map((item, i) =>
-                                <tr className={i % 2 == 0 ? "linha-alternada" : ""}>
+                                <tr className={i % 2 === 0 ? "linha-alternada" : ""}>
                                 <td> <img src={item.img_produto} style={{width:"100px", height:"100px"} } /></td>
                                 <td> {item.id_produto} </td>
                                 <td title={item.nm_produto}> {item.nm_produto != null && item.nm_produto.length >= 25 ? item.nm_produto.substr(0, 25) + '...' : item.nm_produto }  </td>
